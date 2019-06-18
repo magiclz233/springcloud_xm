@@ -1,6 +1,6 @@
 package com.cnpc;
 
-import com.cnpc.emtity.User;
+import com.cnpc.entity.User;
 import com.cnpc.repository.UserRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -21,6 +21,9 @@
 
     <modules>
         <module>eureka-server</module>
+        <module>api-zuul</module>
+        <module>feign-service</module>
+        <module>rest-client</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

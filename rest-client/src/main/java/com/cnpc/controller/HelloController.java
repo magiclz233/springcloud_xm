@@ -1,12 +1,10 @@
 package com.cnpc.controller;
 
-import com.cnpc.emtity.User;
+import com.cnpc.entity.User;
 import com.cnpc.repository.UserRepository;
 import com.cnpc.util.ResultBean;
-import org.bouncycastle.math.raw.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.*;

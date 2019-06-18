@@ -1,4 +1,4 @@
-package com.cnpc.emtity;
+package com.cnpc.entity;
 
 import cn.hutool.core.date.DateUtil;
 import lombok.Data;
