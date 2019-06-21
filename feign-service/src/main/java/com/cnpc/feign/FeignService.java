@@ -15,7 +15,7 @@ import java.util.List;
  * @Version 1.0
  **/
 
-@FeignClient(value = "rest-client")
+@FeignClient(value = "rest-client",fallback = FeignHystric.class)
 public interface FeignService {
 
     @RequestMapping(value = "/hello",method = RequestMethod.GET)
@@ -23,4 +23,5 @@ public interface FeignService {
 
     @RequestMapping(value = "/users",method = RequestMethod.GET)
     Object allUser();
+
 }

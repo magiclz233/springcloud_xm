@@ -19,6 +19,8 @@ public class FeignController {
 
     @Autowired
     FeignService feignService;
+    @Autowired
+    FeignServiceLH feignServiceLH;
 
     @GetMapping(value = "/hi")
     public String sayHello(@RequestParam String name){
@@ -29,4 +31,14 @@ public class FeignController {
     public Object allUser(){
         return feignService.allUser();
     }
+
+    @GetMapping("/testLH")
+    public Object testLH(@RequestParam(value = "type",required = false,defaultValue = "0")int type,
+                         @RequestParam(value = "name",required = false,defaultValue = "长庆油田")String name,
+                         @RequestParam(value = "reserve",required = false,defaultValue = "0")int reserve){
+        
+        return feignServiceLH.testLH(type,name,reserve);
+    }
+
+
 }
