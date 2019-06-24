@@ -24,12 +24,13 @@
         <module>api-zuul</module>
         <module>feign-service</module>
         <module>rest-client</module>
+        <module>api-gateway</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+        <spring-cloud.version>Finchley.SR3</spring-cloud.version>
     </properties>
 
     <dependencies>
